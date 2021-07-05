@@ -1,0 +1,40 @@
+@import "variables";
+
+@mixin web-padding($top, $right:$top, $bottom: $top, $left:$right)
+{
+    padding: $top $right $bottom $left;
+}
+
+.cursos {
+    background-color: $color-dark;
+    color: $color-white;
+    h2, h3 {
+        font-weight: $weight-bold;
+    }
+    h2 {
+        @include web-padding(2rem);
+    }
+}
+
+.cursos__entrada {
+    width: 100%;
+    height: $cursos-height;
+    position: relative;
+    //padding:30px 30px 50px 30px;
+    @include web-padding(30px, 30px, 50px);
+}
+
+.cursos__descripcion {
+    width: $cursos-width;
+    @include web-padding(1.5rem);
+    color: $color-dark;
+    background-color: $color-white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@each $indice, $photo in $catalogo {
+    .curso--#{$indice} {
+        background: url(../media/#{$photo}.jpg);
+    }
+}
