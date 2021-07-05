@@ -39,12 +39,7 @@ li{
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Playfair Display', serif; 
 }
-h1{
-	font-size: 4rem;
-	text-align: center;
-	font-style: italic;
-	font-weight: 900;
-}
+
 h2{
 	font-size: 3rem;
 	font-weight: 400;
@@ -76,7 +71,11 @@ p{
 	background-position: center center;
 }
 
-h1 {
+#slidePrincipal h1 {
+	font-size: 4rem;
+	text-align: center;
+	font-style: italic;
+	font-weight: 900;
 	position: absolute;
 	top: 50%;
 	display: inline-block;
@@ -118,12 +117,33 @@ h1 {
  	color:#AEADB3;
  	padding:30px 30px 50px 30px;
 }
-#cursos h2{
+#cursos h2, .cursos h1{
 	color:#9E402A;
 }
 
-#cursos h2:after {
+.cursos h1, #portfolio h1{
+	font-size: 3rem;
+	font-style: italic;
+	padding: 1rem 0;
+	margin: 0 0 2rem 30px;
+	position:relative;
+}
+
+#cursos h2:after, .cursos h1:after, #portfolio h1:after {
+	position:absolute;
+	content:"";
+	bottom: 0;
+	left: 0;
+	width: 3rem;
 	border-bottom: 3px solid #9E402A;
+}
+
+#portfolio h1 {
+	margin-left: 0;
+}
+
+#portfolio h1:after {
+	border-bottom: 3px solid #222121;
 }
 
 #cursos h3{
