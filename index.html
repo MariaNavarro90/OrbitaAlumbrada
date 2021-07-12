@@ -132,47 +132,51 @@
 				</div>
 			</div>
 		</div>
-		<div class="row" id="contacto">
-			<div class="col-12">
-				<h2>Contacto</h2>
-			</div>
-			<div class="col-8 formulario">
-				<form action="recibe.html" method="POST" enctype="multipart/form-data">
-					<input type="text" class="control" name="nombre" placeholder="Apellido y Nombre">
-					<br>
-					<input type="mail"  class="control" name="email" placeholder="Ingrese su Email">
-					<br>
-					<div class="formContenedor">
-						<label class="subheading">Seleccione un Curso</label>
-						<input type="checkbox" class="miCheckbox" name="cursos" value="curso1" id="curso1">
-						<label class="checkboxLabel" for="curso1">Curso 1</label>
-						<input type="checkbox" class="miCheckbox" name="cursos" value="curso2" id="curso2">
-						<label class="checkboxLabel" for="curso2">Curso 2</label>
-						<input type="checkbox" class="miCheckbox" name="cursos" value="curso3" id="curso3">
-						<label class="checkboxLabel" for="curso3">Curso 3</label>
+		<div id="contacto">
+			<div class="container" id="contacto">
+				<div class="row">
+					<div class="col-12">
+						<h2>Contacto</h2>
 					</div>
-					<div class="formContenedor">
-						<label class="subheading">Seleccione un turno</label>
-						<select class="control" name="turnos">
-							<option value="mañana">Mañana</option>
-							<option value="tarde">Tarde</option>
-							<option value="noche">Noche</option>
-						</select>
+					<div class="col-8 formulario">
+						<form action="recibe.html" method="POST" enctype="multipart/form-data">
+							<input type="text" class="control" name="nombre" placeholder="Apellido y Nombre">
+							<br>
+							<input type="mail"  class="control" name="email" placeholder="Ingrese su Email">
+							<br>
+							<div class="formContenedor">
+								<label class="subheading">Seleccione un Curso</label>
+								<input type="checkbox" class="miCheckbox" name="cursos" value="curso1" id="curso1">
+								<label class="checkboxLabel" for="curso1">Curso 1</label>
+								<input type="checkbox" class="miCheckbox" name="cursos" value="curso2" id="curso2">
+								<label class="checkboxLabel" for="curso2">Curso 2</label>
+								<input type="checkbox" class="miCheckbox" name="cursos" value="curso3" id="curso3">
+								<label class="checkboxLabel" for="curso3">Curso 3</label>
+							</div>
+							<div class="formContenedor">
+								<label class="subheading">Seleccione un turno</label>
+								<select class="control" name="turnos">
+									<option value="mañana">Mañana</option>
+									<option value="tarde">Tarde</option>
+									<option value="noche">Noche</option>
+								</select>
+							</div>
+							<div class="formContenedor">
+								<label class="subheading">Mensaje</label>
+								<textarea class="control"></textarea>
+							</div>
+							<input class="formBoton" type="submit" name="sube_form" value="ENVIAR">
+							<input class="formBoton" type="reset" name="resetear" value="BORRAR">
+						</form>
 					</div>
-					<div class="formContenedor">
-						<label class="subheading">Mensaje</label>
-						<textarea class="control"></textarea>
+					<div class="col-4 masInfo">
+						<h3>Más info</h3>
+						<p>Órbita Alumbrada es un proyecto independinte de dos mujeres emprendedoras que tiene el objetivo de enseñar a las personas a expresarse y comunicar mediante la fotografía.</p>
+						<div class="redesSociales">
+							<i class="fab fa-instagram "></i>
+							<i class="fab fa-facebook-f "></i>
+						</div>
 					</div>
-					<input class="formBoton" type="submit" name="sube_form" value="ENVIAR">
-			        <input class="formBoton" type="reset" name="resetear" value="BORRAR">
-				</form>
-			</div>
-			<div class="col-4 masInfo">
-				<h3>Más info</h3>
-				<p>Órbita Alumbrada es un proyecto independinte de dos mujeres emprendedoras que tiene el objetivo de enseñar a las personas a expresarse y comunicar mediante la fotografía.</p>
-				<div class="redesSociales">
-					<i class="fab fa-instagram "></i>
-					<i class="fab fa-facebook-f "></i>
 				</div>
 			</div>
 		</div>

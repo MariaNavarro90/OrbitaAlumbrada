@@ -229,7 +229,7 @@ p {
   padding: 30px;
 }
 
-#contacto .footer, #contacto .redesSociales {
+#contacto .redesSociales {
   background-color: #222121;
   color: #AEADB3;
   padding: 30px;
@@ -241,6 +241,12 @@ p {
 
 #contacto .masInfo {
   color: 9E402A;
+}
+
+.footer {
+  background-color: #222121;
+  color: #AEADB3;
+  padding: 30px;
 }
 
 .whatsapp {

@@ -222,7 +222,7 @@ p {
     color:$color-white;
     padding:30px;
 
-    .footer, .redesSociales {
+    .redesSociales {
         background-color:$color-dark;
         color:$color-white;
         padding:30px;
@@ -235,6 +235,12 @@ p {
     .masInfo {
         color: $color-red;
     }
+}
+
+.footer {
+    background-color:$color-dark;
+    color:$color-white;
+    padding:30px;
 }
 
 .whatsapp {
