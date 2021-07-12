@@ -1,0 +1,344 @@
+@import "variables";
+
+body{
+	font-family: $main-font;
+}
+
+#header{
+	color: white;
+	min-height: 4em;
+	align-items: center;
+	padding: 0 2em;
+}
+
+.bgPrincipal {
+    background-color: $color-brown;
+}
+
+li{
+    padding-left: 32px;
+    background-position: 0 0;
+    background-size: 18px 18px;
+    display: inline-block;
+}
+
+
+#header {
+    li a {
+        font-family: $secondary-font;
+	    font-weight: 600;
+		color: $color-white;
+		text-decoration: none;
+		transition: 0.5s color;
+    }
+
+    li a:hover {
+        color: white;
+    }
+
+    .menu {
+        list-style:none outside;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: $title-font; 
+}
+
+h2{
+	font-size: 3rem;
+	font-weight: 400;
+	font-style: italic;
+	padding-bottom: 1rem;
+	margin-bottom: 2rem; 
+	position: relative;
+}
+
+
+h2:after{
+	position:absolute;
+	content:"";
+	bottom: 0;
+	left: 0;
+	width: 3rem;
+	border-bottom: 3px solid #211915;
+}
+
+p {
+	font-size: $base-font-size;
+}
+
+.principal{
+	height: 100vh;
+	background-image: url("../media/jakob.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#slidePrincipal h1 {
+	font-size: 4rem;
+	text-align: center;
+	font-style: italic;
+	font-weight: 900;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	transform:  translate(-50%, -50%);
+	left: 50%;
+	color: #AEADB3;
+	background: #23074d;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#portfolio, #nosotros{
+	background-color: $color-grey;
+	color:$color-dark;
+	padding:30px;
+}
+
+.main-titular:after {
+    position:absolute;
+	content:"";
+	bottom: 0;
+	left: 0;
+	width: 3rem;
+	border-bottom: 3px solid #9E402A;
+}
+
+#portfolio {
+
+    h1 {
+        font-size: 3rem;
+        font-style: italic;
+        padding: 1rem 0;
+        margin: 0 0 2rem 30px;
+        position:relative;
+        margin-left: 0;
+    }
+
+    h1:after {
+        border-bottom: 3px solid $color-dark !important;
+    }
+
+    img {
+        width: 300px;
+        height:  225px;
+        object-fit: cover;
+        margin: 15px 15px 15px 0;
+        transition: 0.5s all ease;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+
+    .contenedorImagenes {
+        display: grid;
+	    grid-template-columns: auto;
+    }
+}
+
+#cursos {
+    background-color:#222121;
+ 	color:#AEADB3;
+    padding:30px 30px 50px 30px;
+     
+    .contenedorCursos {
+        display: grid;
+	    grid-template-columns: auto;
+    }
+
+    h2 {
+        color: $color-red;
+    }
+
+    h2:after {
+        position:absolute;
+        content:"";
+        bottom: 0;
+        left: 0;
+        width: 3rem;
+        border-bottom: 3px solid $color-red;
+    }
+
+    h3 {
+        font-weight: 700;
+	    font-size: 2rem;
+    }
+
+    p, a {
+        font-size: $base-font-size;
+        line-height: 1.5;
+        padding-right: 2rem;
+    }  
+    p {
+        margin-bottom: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-grey;
+        position: relative;
+        padding: 0.5rem 1rem;
+        transition: 0.5s all ease;
+        z-index:1;
+    }
+
+    a:before {
+        position: absolute;
+        content:"";
+        bottom: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid $color-grey;
+        transition: 0.5s all ease;
+        z-index:-1;
+    }
+
+    a:hover {
+        color:white;
+    }
+
+    a:hover::before {
+        border-bottom: 2.5rem solid $color-grey;
+    }
+}
+
+.cursos {
+    h1 {
+        color: $color-red;
+    }
+}
+
+.curso {
+    margin-bottom: 2em;
+}
+
+#contacto {
+    background-color:$color-dark;
+    color:$color-white;
+    padding:30px;
+
+    .footer, .redesSociales {
+        background-color:$color-dark;
+        color:$color-white;
+        padding:30px;
+    }
+
+    h2:after {
+        border-bottom: 3px solid $color-white;
+    }
+
+    .masInfo {
+        color: $color-red;
+    }
+}
+
+.whatsapp {
+    position: fixed;
+ 	bottom:32px;
+ 	right: 32px;
+     z-index:2;
+     
+     img {
+        height: 32px;
+        width: 32px;
+     }
+}
+
+.formulario {
+    .label {
+        font-size: $base-font-size;
+    }
+
+    .label.subheading {
+        width:  100%;
+        display:  inline-block;
+        padding-bottom: 0.5em;
+    }
+
+    .checkboxLabel {
+        margin-right:  2em;
+    }
+}
+
+.formContenedor {
+    margin-bottom: 1em;
+}
+
+.formBoton {
+	padding: 1em;
+	font-size: 1em;
+	font-family: $secondary-font;
+	font-weight: 700;
+	border: none;
+	background-color: $color-dark;
+	border: 1px solid $color-grey;
+	color:$color-grey;
+	margin-right: 2em;
+	transition:  1s all ease;
+}
+
+.formBoton:hover{
+		background-color: $color-grey;
+		color: white;
+}
+
+#nosotros {
+    p {
+        font-style:italic;
+    }
+
+    .col {
+        text-align: center;
+	    padding: 0 4em;
+    }
+
+    h3 {
+        font-weight: 700;
+	    margin-bottom: 1em;
+    }
+}
+
+.nosotros--img {
+	max-width: 200px;
+	max-height: 200px;
+	margin-bottom: 2em;
+}
+
+
+.control {
+	width: 100%;
+	padding: 0.5em;
+	background-color: $color-white;
+	border: none;
+	font-size: 1em;
+	margin-bottom: 1em;
+	font-family: $secondary-font;
+	font-style:  italic;
+}
+
+.navbar-brand img {
+	max-width: 40px;
+}
+
+@media all and (min-width: 768px) {
+
+	#portfolio .contenedorImagenes {
+		grid-template-columns: auto auto;
+	}
+}
+
+@media all and (min-width: 1024px) {
+
+	#portfolio .contenedorImagenes {
+		grid-template-columns: auto auto auto auto;
+    }
+    
+	#cursos .contenedorCursos{
+		grid-template-columns: auto auto auto;
+	}
+}
