@@ -19,7 +19,6 @@
 }
 
 .cursos__descripcion {
-  width: 100vh;
   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   color: #222121;
   background-color: #AEADB3;
@@ -31,13 +30,22 @@
 
 .curso--analogico {
   background: url(../media/analogica.jpg);
+  background-size: cover;
 }
 
 .curso--blancoynegro {
   background: url(../media/blancoynegro.jpg);
+  background-size: cover;
 }
 
 .curso--personas {
   background: url(../media/photo-007.jpg);
+  background-size: cover;
+}
+
+@media all and (min-width: 1024px) {
+  .cursos__descripcion {
+    width: 100vh;
+  }
 }
 /*# sourceMappingURL=cursos.css.map */
